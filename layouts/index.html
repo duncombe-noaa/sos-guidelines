@@ -5,35 +5,30 @@
 
     <div class="content container">
 
-	<div class="posts">
+        <div class="post">
 
- 
-  <div class="post">
+          {{ range .Data.Pages }}
 
-	{{ range .Data.Pages }}
-
-    <header>
-      <h2><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
-    <!--  <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div> -->
-    </header>
+            <header>
+            <h2><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
+            <!--  <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div> -->
+            </header>
 	
-	{{ if eq .RelPermalink "/sos-guidelines/index.html" }} 
-		{{ .Content }}
-	{{else}}
+            {{ if eq .RelPermalink "/sos-guidelines/index.html" }} 
+	        {{ .Content }}
+	    {{else}}
 		{{ .Summary }} 
-	{{end}}
+	    {{end}}
 
-    <footer>
-        <a href='{{ .Permalink }}'><nobr><i>Read more ></i></nobr></a>
-    </footer>
+            <footer>
+                <a href='{{ .Permalink }}'><nobr><i>Read more ></i></nobr></a>
+            </footer>
 
-	{{ end }}
+	  {{ end }}
 
 	</div>
+    </div>
 
 
-</div>
-
-
-  </body>
+</body>
 </html>

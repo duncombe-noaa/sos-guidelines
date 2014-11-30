@@ -53,6 +53,11 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
+.nosidebar {
+  text-align: left;
+  padding: 1rem 1rem;
+}
+
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;

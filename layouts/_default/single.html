@@ -1,22 +1,19 @@
 {{ template "chrome/head.html" . }}
 <body>
 
-{{ template "chrome/sidebar.html" . }}
+<div class="container nosidebar" max-width="200">
 
-    <div class="content container">
-<div class="post">
+   <div class="page">
 
-  <h1>{{ .Title }}</h1>
+   <h1>{{ .Title }}</h1>
 <!--
   <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
 -->
     <div id="toc" class="well col-md-4 col-sm-6">
-    {{ .TableOfContents }}
+       {{ .TableOfContents }}
     </div>
-
-      {{ .Content }}
+    {{ .Content }}
+  </div>
 </div>
-</div>
-
   </body>
 </html>
