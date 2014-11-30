@@ -3,7 +3,7 @@
 draft = false
 title = "IOOS SOS v1.0 WSDD"
 description = "IOOS SOS v1.0 Web Service Description"
-type = "post"
+type = "page"
 date = 2014-08-04T08:09:56Z
 weight = "1"
 +++
