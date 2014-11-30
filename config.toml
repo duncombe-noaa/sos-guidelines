@@ -1,4 +1,4 @@
-baseurl = "http://ioos.github.io"
+baseurl = "http://duncombe.github.io/sos-guidelines/"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
