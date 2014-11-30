@@ -3,7 +3,7 @@
   <channel>
       <title>Templates on IOOS SOS Guidelines </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://duncombe.github.io/template/index.xml</link>
+    <link>http://duncombe.github.io/sos-guidelines/template/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,13 +11,13 @@
     
     <item>
       <title>IOOS SOS v1.0 GetCapabilities Template</title>
-      <link>http://duncombe.github.io/template/SOS-GetCapabilities</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SOS-GetCapabilities/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SOS-GetCapabilities</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SOS-GetCapabilities/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) GetCapabilities response.&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template Document for a generic (independant of feature type) Get Capabilites --&amp;gt;
 &amp;lt;!--  --&amp;gt;
 &amp;lt;!-- Template includes the following required metadata elements: --&amp;gt;
@@ -216,13 +216,13 @@
     
     <item>
       <title>IOOS SOS v1.0 SML DescribeSensor-Network Template</title>
-      <link>http://duncombe.github.io/template/SML-DescribeSensor-Network</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Network/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SML-DescribeSensor-Network</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Network/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) SensorML DescribeSensor response for Network of Stations&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template document for a generic (independant of feature type) Describe Sensor Network --&amp;gt;
 &amp;lt;!-- Each member system in the template includes: --&amp;gt;
 &amp;lt;!--    Name &amp;amp; Description --&amp;gt;
@@ -511,13 +511,13 @@
     
     <item>
       <title>IOOS SOS v1.0 SML DescribeSensor-Station Template</title>
-      <link>http://duncombe.github.io/template/SML-DescribeSensor-Station</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Station/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SML-DescribeSensor-Station</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Station/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) SensorML DescribeSensor response for a single station&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template document for a generic (independant of feature type) Describe Sensor Station --&amp;gt;
 &amp;lt;!--  --&amp;gt;
 &amp;lt;!-- Since Milestone 1.0 really only addresses timeSeries and timeSeriesProfile, only station --&amp;gt;
@@ -876,13 +876,13 @@
     
     <item>
       <title>IOOS SOS v1.0 OM GetObservation Template</title>
-      <link>http://duncombe.github.io/template/OM-GetObservation</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/OM-GetObservation/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/OM-GetObservation</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/OM-GetObservation/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) GetObservation response. The result block in this template is empty; see SWE templates for guidance on the result block.&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template Document for a generic (independent of feature type) Get Observation. --&amp;gt;
 &amp;lt;!-- Specific feature types are referenced for example only. --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -1063,13 +1063,13 @@
     
     <item>
       <title>IOOS SOS v1.0 SWE-MultiStation-TimeSeries Template</title>
-      <link>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for multiple stations with multiple sensors&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple sensors --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -1513,7 +1513,7 @@
             &amp;lt;/swe2:DataChoice&amp;gt;
           &amp;lt;/swe2:field&amp;gt;
         &amp;lt;/swe2:DataRecord&amp;gt;
-      &amp;lt;/swe2:elementType&amp;gt;   
+      &amp;lt;/swe2:elementType&amp;gt;	
       
       &amp;lt;swe2:encoding&amp;gt;
         &amp;lt;!-- SWE encoding and data values --&amp;gt;
@@ -1524,7 +1524,7 @@
         &amp;lt;!-- swe:TextEncoding specification. --&amp;gt;
         &amp;lt;!--  --&amp;gt;
         &amp;lt;!-- About DataChoice from SWE Common 2.0: --&amp;gt;
-        &amp;lt;!-- 9.2.5  Rules for DataChoice --&amp;gt;
+        &amp;lt;!-- 9.2.5	Rules for DataChoice --&amp;gt;
         &amp;lt;!-- A тАЬDataChoiceтАЭ is encoded with the text method by providing the name of the selected item --&amp;gt;
         &amp;lt;!-- before the item values themselves. The name used shall correspond to the тАЬnameтАЭ attribute --&amp;gt;
         &amp;lt;!-- of the тАЬitemтАЭ property element that describes the structure of the selected item. --&amp;gt;
@@ -1566,13 +1566,13 @@
     
     <item>
       <title>IOOS SOS v1.0 SWE-MultiStation-TimeSeries-QC Template</title>
-      <link>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries_QC</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries_QC/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries_QC</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries_QC/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for multiple stations with multiple sensors including quality elements for some quantities&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple sensors including quality elements for some quantities. --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -2147,7 +2147,7 @@
             &amp;lt;/swe2:DataChoice&amp;gt;
           &amp;lt;/swe2:field&amp;gt;
         &amp;lt;/swe2:DataRecord&amp;gt;
-      &amp;lt;/swe2:elementType&amp;gt;   
+      &amp;lt;/swe2:elementType&amp;gt;	
       
       &amp;lt;swe2:encoding&amp;gt;
         &amp;lt;!-- SWE encoding and data values --&amp;gt;
@@ -2158,7 +2158,7 @@
         &amp;lt;!-- swe:TextEncoding specification. --&amp;gt;
         &amp;lt;!--  --&amp;gt;
         &amp;lt;!-- About DataChoice from SWE Common 2.0: --&amp;gt;
-        &amp;lt;!-- 9.2.5  Rules for DataChoice --&amp;gt;
+        &amp;lt;!-- 9.2.5	Rules for DataChoice --&amp;gt;
         &amp;lt;!-- A тАЬDataChoiceтАЭ is encoded with the text method by providing the name of the selected item --&amp;gt;
         &amp;lt;!-- before the item values themselves. The name used shall correspond to the тАЬnameтАЭ attribute --&amp;gt;
         &amp;lt;!-- of the тАЬitemтАЭ property element that describes the structure of the selected item. --&amp;gt;
@@ -2201,13 +2201,13 @@
     
     <item>
       <title>IOOS SOS v1.0 SWE-SingleStation-SingleProperty-TimeSeries Template</title>
-      <link>http://duncombe.github.io/template/SWE-SingleStation-SingleProperty-TimeSeries</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-SingleProperty-TimeSeries/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-SingleStation-SingleProperty-TimeSeries</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-SingleProperty-TimeSeries/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for a single station with a single sensor&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- a single station with a single sensor. It is a degenerate case of the multi station, multi --&amp;gt;
 &amp;lt;!-- sensor template.--&amp;gt;
@@ -2418,7 +2418,7 @@
             &amp;lt;/swe2:DataChoice&amp;gt;
           &amp;lt;/swe2:field&amp;gt;
         &amp;lt;/swe2:DataRecord&amp;gt;
-      &amp;lt;/swe2:elementType&amp;gt;   
+      &amp;lt;/swe2:elementType&amp;gt;	
       
       &amp;lt;swe2:encoding&amp;gt;
         &amp;lt;!-- SWE encoding and data values --&amp;gt;
@@ -2429,7 +2429,7 @@
         &amp;lt;!-- swe:TextEncoding specification. --&amp;gt;
         &amp;lt;!--  --&amp;gt;
         &amp;lt;!-- About DataChoice from SWE Common 2.0: --&amp;gt;
-        &amp;lt;!-- 9.2.5  Rules for DataChoice --&amp;gt;
+        &amp;lt;!-- 9.2.5	Rules for DataChoice --&amp;gt;
         &amp;lt;!-- A тАЬDataChoiceтАЭ is encoded with the text method by providing the name of the selected item --&amp;gt;
         &amp;lt;!-- before the item values themselves. The name used shall correspond to the тАЬnameтАЭ attribute --&amp;gt;
         &amp;lt;!-- of the тАЬitemтАЭ property element that describes the structure of the selected item. --&amp;gt;
@@ -2461,13 +2461,13 @@
     
     <item>
       <title>IOOS SOS v1.0 SWE-SingleStation-TimeSeriesProfile Template</title>
-      <link>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for a station with profiling sensors&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple profiling sensors --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -2983,13 +2983,13 @@
     
     <item>
       <title>IOOS SOS v1.0 SWE-SingleStation-TimeSeriesProfile-QC Template</title>
-      <link>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile_QC</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile_QC/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile_QC</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile_QC/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for a station with profiling sensors including quality elements for some quantities&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple profiling sensors --&amp;gt;
 &amp;lt;!--  --&amp;gt;

@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on IOOS SOS Guidelines </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>http://duncombe.github.io/index.xml</link>
+    <link>http://duncombe.github.io/sos-guidelines/index.xml/</link>
     <language>en-us</language>
     
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>About IOOS SOS Application Profile</title>
-      <link>http://duncombe.github.io/about</link>
+      <link>http://duncombe.github.io/sos-guidelines/about/</link>
       <pubDate>Mon, 04 Aug 2014 07:56:39 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/about</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/about/</guid>
       <description>
 
 &lt;!-- For a single homepage put in FrontMatter url = &#34;index.html&#34; --&gt;
@@ -67,10 +67,10 @@ The &lt;a href=&#34;https://github.com/ioos/sos-guidelines&#34;&gt;GitHub reposi
     
     <item>
       <title>IOOS SOS v1.0 WSDD</title>
-      <link>http://duncombe.github.io/doc/wsdd/sos_wsdd_github_notoc</link>
+      <link>http://duncombe.github.io/sos-guidelines/doc/wsdd/sos_wsdd_github_notoc/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/doc/wsdd/sos_wsdd_github_notoc</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/doc/wsdd/sos_wsdd_github_notoc/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;This Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.&lt;/em&gt;&lt;/p&gt;
@@ -240,9 +240,9 @@ At the start of the interaction, a consumer issues a GetCapabilities request to
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -295,24 +295,24 @@ At the start of the interaction, a consumer issues a GetCapabilities request to
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?&lt;/code&gt;&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;HTTP/POST&lt;/strong&gt;
-&lt;code&gt;XML
-&amp;lt;sos:GetCapabilities 
+&lt;li&gt;&lt;strong&gt;HTTP/POST&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;sos:GetCapabilities 
 xmlns=&amp;quot;http://www.opengis.net/sos/1.0&amp;quot; 
 xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; 
 xmlns:ogc=&amp;quot;http://www.opengis.net/ogc&amp;quot; 
 xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; 
 xsi:schemaLocation=&amp;quot;http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosGetCapabilities.xsd&amp;quot; 
 service=&amp;quot;SOS&amp;quot; updateSequence=&amp;quot;&amp;quot;&amp;gt;
-&amp;lt;ows:AcceptVersions&amp;gt;
-    &amp;lt;ows:Version&amp;gt;1.0.0&amp;lt;/ows:Version&amp;gt;
-&amp;lt;/ows:AcceptVersions&amp;gt;
-&amp;lt;ows:Sections&amp;gt;   
-    &amp;lt;ows:Value&amp;gt;All&amp;lt;/ows:Value&amp;gt;  
-&amp;lt;/ows:Sections&amp;gt;
+    &amp;lt;ows:AcceptVersions&amp;gt;
+        &amp;lt;ows:Version&amp;gt;1.0.0&amp;lt;/ows:Version&amp;gt;
+    &amp;lt;/ows:AcceptVersions&amp;gt;
+    &amp;lt;ows:Sections&amp;gt;   
+        &amp;lt;ows:Value&amp;gt;All&amp;lt;/ows:Value&amp;gt;  
+    &amp;lt;/ows:Sections&amp;gt;
 &amp;lt;/sos:GetCapabilities&amp;gt;
-&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;toc_12&#34;&gt;GetCapabilities Response&lt;/h4&gt;
 
@@ -332,7 +332,7 @@ service=&amp;quot;SOS&amp;quot; updateSequence=&amp;quot;&amp;quot;&amp;gt;
 &lt;li&gt;sos:Contents&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;sos:Capabilities 
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;sos:Capabilities 
 xmlns:sos=&amp;quot;http://www.opengis.net/sos/1.0&amp;quot; 
 xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; 
 xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; xmlns:gml=&amp;quot;http://www.opengis.net/gml&amp;quot; xmlns:ogc=&amp;quot;http://www.opengis.net/ogc&amp;quot; version=&amp;quot;1.0.0&amp;quot; xsi:schemaLocation=&amp;quot;http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosAll.xsd&amp;quot;&amp;gt;
@@ -351,7 +351,7 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 
 &lt;p&gt;This section contains metadata about this specific server, including the title, abstract, keywords, service type, version, fees, and access constraints if any for using this server. No IOOS-specific guidelines and conventions are applicable to this section; it is fully defined by the SOS 1.0.0 standard.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;  &amp;lt;ows:ServiceIdentification&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;  &amp;lt;ows:ServiceIdentification&amp;gt;
     &amp;lt;ows:Title&amp;gt;TITLE&amp;lt;/ows:Title&amp;gt;
     &amp;lt;ows:Abstract&amp;gt;ABSTRACT&amp;lt;/ows:Abstract&amp;gt;
     &amp;lt;ows:Keywords&amp;gt;
@@ -369,7 +369,7 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 
 &lt;p&gt;This section contains metadata about the organization operating this server, including service provider name, site, address, contact information, etc. Similar to the previous section described above, this section does not require following any IOOS-specific conventions; it is fully defined by the SOS 1.0.0 standard.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;  &amp;lt;ows:ServiceProvider&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;  &amp;lt;ows:ServiceProvider&amp;gt;
     &amp;lt;ows:ProviderName&amp;gt;IOOS (OR ANY OTHER PROVIDER)&amp;lt;/ows:ProviderName&amp;gt;
     &amp;lt;ows:ProviderSite xlink:href=&amp;quot;http://www.ioos.noaa.gov/&amp;quot;/&amp;gt;
     &amp;lt;ows:ServiceContact&amp;gt;
@@ -398,7 +398,7 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 
 &lt;p&gt;The URL for HTTP GET requests may either differ from the URL for POST requests or be the same. Note also, that OGC 06-121r9 “OGC Web Service Common Implementation Specification” requires GET URL to end up with a question mark (“?”), as opposed to the POST URL:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;ows:HTTP&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;ows:HTTP&amp;gt;
     &amp;lt;ows:Get xlink:href=&amp;quot;SOS_SERVER_GET_URL?&amp;quot;/&amp;gt;
     &amp;lt;ows:Post xlink:href=&amp;quot;SOS_SERVER_POST_URL&amp;quot;/&amp;gt;
 &amp;lt;/ows:HTTP&amp;gt;
@@ -406,7 +406,7 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 
 &lt;p&gt;In addition tothe SOS v1.0.0 Implementation Specification, the IOOS Convention requires an indication of the current versions for both template and software; this information is provided in the &lt;code&gt;&amp;lt;ows:ExtendedCapabilities&amp;gt;/&amp;lt;gml:metaDataProperty xlink:title=&amp;quot;ioosTemplateVersion&amp;quot;&amp;gt;&lt;/code&gt;, and in the &lt;code&gt;&amp;lt;ows:ExtendedCapabilities&amp;gt;/&amp;lt;gml:metaDataProperty xlink:title=&amp;quot;softwareVersion&amp;quot;&amp;gt;&lt;/code&gt; elements respectively.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;  &amp;lt;ows:OperationsMetadata&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;  &amp;lt;ows:OperationsMetadata&amp;gt;
     &amp;lt;ows:Operation name=&amp;quot;GetCapabilities&amp;quot;&amp;gt;
       &amp;lt;ows:DCP&amp;gt;
         &amp;lt;ows:HTTP&amp;gt;
@@ -491,9 +491,9 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -543,7 +543,7 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;sos:observedProperty&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;1…*&lt;/td&gt;
-&lt;td&gt;This element advertizes one or more quantities observed by a specific offering.&lt;br /&gt;The element’s value must be a URL corresponding to a Climate and Forecast (CF) Standard Name of the record in one of the IOOS Vocabularies that are currently hosted by the Marine Metadata Interoperability (MMI) project (e.g. &lt;a href=&#34;http://mmisw.org/ont/ioos/parameter).&amp;lt;br&#34;&gt;http://mmisw.org/ont/ioos/parameter).&amp;lt;br&lt;/a&gt; /&amp;gt;The IOOS convention only requires support of fully qualified &lt;code&gt;&amp;lt;sos:observedProperty&amp;gt;&lt;/code&gt; element values (URLs); support of unqualified values is optional.&lt;br /&gt;Along with simple observed phenomenon defined in the CF standard names parameter vocabulary (CF phenomenon), e.g. &lt;a href=&#34;http://mmisw.org/ont/cf/parameter&#34;&gt;http://mmisw.org/ont/cf/parameter&lt;/a&gt; , the IOOS Convention allows complex composite phenomenon, that consists of a number of the CF phenomena. That composite phenomenon may be either vector variable (i.e wind, current, or wave) comprised by its scalar components (e.g. “wind&lt;em&gt;from_direction”, “wind_speed_of_gust”, etc.), or an arbitrary set of CF phenomena (e.g. wind components aggregated with “air_temperature”, “dissolved_oxygen”, etc.). At any rate, the IOOS Convention requires that composite phenomenon to be defined in one of the IOOS controlled vocabularies (e.g. IOOS Parameter Vocabulary).&lt;br /&gt;The advertised value of the &lt;code&gt;&amp;lt;sos:observedProperty&amp;gt;&lt;/code&gt; shall be used in GetObservation operation to obtain the actual data. A description of &lt;code&gt;&amp;lt;om:observedProperty&amp;gt;&lt;/code&gt; in OM-GetObservation section of this document explicitly describes the IOOS Convention’s requirements for the provision of the composite phenomenon’s observed values.&lt;br /&gt;&lt;br /&gt;&lt;/em&gt;&lt;strong&gt;Examples of &lt;code&gt;observedProperty&lt;/code&gt; advertisement:&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;observedProperty xlink:href=http://mmisw.org/ont/cf/parameter/VALUE&lt;/code&gt;&lt;br /&gt;&lt;code&gt;observedProperty xlink:href=&amp;quot;http://mmisw.org/ont/cf/parameter/ COMPOSITE_VALUE&amp;quot;&lt;/code&gt;_&lt;/td&gt;
+&lt;td&gt;This element advertizes one or more quantities observed by a specific offering.&lt;br /&gt;The element’s value must be a URL corresponding to a Climate and Forecast (CF) Standard Name of the record in one of the IOOS Vocabularies that are currently hosted by the Marine Metadata Interoperability (MMI) project (e.g. &lt;a href=&#34;http://mmisw.org/ont/ioos/parameter&#34;&gt;http://mmisw.org/ont/ioos/parameter&lt;/a&gt;).&lt;br /&gt;The IOOS convention only requires support of fully qualified &lt;code&gt;&amp;lt;sos:observedProperty&amp;gt;&lt;/code&gt; element values (URLs); support of unqualified values is optional.&lt;br /&gt;Along with simple observed phenomenon defined in the CF standard names parameter vocabulary (CF phenomenon), e.g. &lt;a href=&#34;http://mmisw.org/ont/cf/parameter&#34;&gt;http://mmisw.org/ont/cf/parameter&lt;/a&gt; , the IOOS Convention allows complex composite phenomenon, that consists of a number of the CF phenomena. That composite phenomenon may be either vector variable (i.e wind, current, or wave) comprised by its scalar components (e.g. “wind&lt;em&gt;from_direction”, “wind_speed_of_gust”, etc.), or an arbitrary set of CF phenomena (e.g. wind components aggregated with “air_temperature”, “dissolved_oxygen”, etc.). At any rate, the IOOS Convention requires that composite phenomenon to be defined in one of the IOOS controlled vocabularies (e.g. IOOS Parameter Vocabulary).&lt;br /&gt;The advertised value of the &lt;code&gt;&amp;lt;sos:observedProperty&amp;gt;&lt;/code&gt; shall be used in GetObservation operation to obtain the actual data. A description of &lt;code&gt;&amp;lt;om:observedProperty&amp;gt;&lt;/code&gt; in OM-GetObservation section of this document explicitly describes the IOOS Convention’s requirements for the provision of the composite phenomenon’s observed values.&lt;br /&gt;&lt;br /&gt;&lt;/em&gt;&lt;strong&gt;Examples of &lt;code&gt;observedProperty&lt;/code&gt; advertisement:&lt;/strong&gt;&lt;br /&gt;&lt;code&gt;observedProperty xlink:href=http://mmisw.org/ont/cf/parameter/VALUE&lt;/code&gt;&lt;br /&gt;&lt;code&gt;observedProperty xlink:href=&amp;quot;http://mmisw.org/ont/cf/parameter/ COMPOSITE_VALUE&amp;quot;&lt;/code&gt;_&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -554,9 +554,9 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;The application of the IOOS Convention to the SOS 1.0.0 Implementation Standard is illustrated by a sample of the Content section of the IOOS Milestone 1.0 GetCapabilities template below; the template shows just the bare minimum of the required metadata, a real server may advertize more parameters and provide more details.
-&lt;code&gt;XML
-  &amp;lt;sos:Contents&amp;gt;
+&lt;p&gt;The application of the IOOS Convention to the SOS 1.0.0 Implementation Standard is illustrated by a sample of the Content section of the IOOS Milestone 1.0 GetCapabilities template below; the template shows just the bare minimum of the required metadata, a real server may advertize more parameters and provide more details.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;  &amp;lt;sos:Contents&amp;gt;
     &amp;lt;sos:ObservationOfferingList&amp;gt;
       &amp;lt;sos:ObservationOffering gml:id=&amp;quot;network_all&amp;quot;&amp;gt;
         &amp;lt;gml:description&amp;gt;All stations&amp;lt;/gml:description&amp;gt;
@@ -608,11 +608,11 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
       &amp;lt;/sos:ObservationOffering&amp;gt;
     &amp;lt;/sos:ObservationOfferingList&amp;gt;
   &amp;lt;/sos:Contents&amp;gt;
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Even more details are depicted in the sample below, which presents a Contents part of the real AOOS test SOS server GetCapabilities documenmt (the sample is presented just for reference, as the response may change at any time); the sampled document advertizes more offerings, observed properties, response output format encodings, etc.
-&lt;code&gt;XML
-  &amp;lt;sos:Contents&amp;gt;
+&lt;p&gt;Even more details are depicted in the sample below, which presents a Contents part of the real AOOS test SOS server GetCapabilities documenmt (the sample is presented just for reference, as the response may change at any time); the sampled document advertizes more offerings, observed properties, response output format encodings, etc.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;  &amp;lt;sos:Contents&amp;gt;
     &amp;lt;sos:ObservationOfferingList&amp;gt;
       &amp;lt;sos:ObservationOffering gml:id=&amp;quot;urn_ioos_network_test_all&amp;quot;&amp;gt;
         &amp;lt;gml:name&amp;gt;urn:ioos:network:test:all&amp;lt;/gml:name&amp;gt;
@@ -761,7 +761,7 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
       &amp;lt;/sos:ObservationOffering&amp;gt;
     &amp;lt;/sos:ObservationOfferingList&amp;gt;
   &amp;lt;/sos:Contents&amp;gt;
-&lt;/code&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;toc_17&#34;&gt;DescribeSensor&lt;/h3&gt;
 
@@ -787,9 +787,9 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -832,21 +832,21 @@ xmlns:ows=&amp;quot;http://www.opengis.net/ows/1.1&amp;quot; xmlns:xlink=&amp;qu
 &lt;li&gt;&lt;strong&gt;HTTP/GET&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?request=DescribeSensor&amp;amp;service=SOS&amp;amp;version=1.0.0&amp;amp;procedure=[anyURI]&amp;amp;outputformat=text/xml;subtype=&amp;quot;sensorML/1.0.1/profiles/ioos_sos/1.0&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?request=DescribeSensor&amp;amp;service=SOS&amp;amp;version=1.0.0&amp;amp;procedure=[anyURI]&amp;amp;outputformat=text/xml;subtype=&amp;quot;sensorML/1.0.1/profiles/ioos_sos/1.0&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;HTTP/POST&lt;/strong&gt;:
-&lt;code&gt;XML
-&amp;lt;sos:DescribeSensor version=&amp;quot;1.0.0&amp;quot; service=&amp;quot;SOS&amp;quot;
-xmlns=&amp;quot;http://www.opengis.net/sos/1.0&amp;quot;
-xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; 
-xsi:schemaLocation=&amp;quot;http://www.opengis.net/sos/1.0  http://schemas.opengis.net/sos/1.0.0/sosDescribeSensor.xsd&amp;quot; 
-outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/ioos_sos/1.0&amp;amp;quot;&amp;quot;&amp;gt;
-&amp;lt;procedure&amp;gt;urn:ioos:network:test:all&amp;lt;/procedure&amp;gt;
-&amp;lt;/sos:DescribeSensor&amp;gt; 
-&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTP/POST&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;sos:DescribeSensor version=&amp;quot;1.0.0&amp;quot; service=&amp;quot;SOS&amp;quot;
+  xmlns=&amp;quot;http://www.opengis.net/sos/1.0&amp;quot;
+  xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot; 
+  xsi:schemaLocation=&amp;quot;http://www.opengis.net/sos/1.0  http://schemas.opengis.net/sos/1.0.0/sosDescribeSensor.xsd&amp;quot; 
+  outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/ioos_sos/1.0&amp;amp;quot;&amp;quot;&amp;gt;
+  &amp;lt;procedure&amp;gt;urn:ioos:network:test:all&amp;lt;/procedure&amp;gt;
+&amp;lt;/sos:DescribeSensor&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;toc_19&#34;&gt;DescribeSensor Response&lt;/h4&gt;
 
@@ -857,7 +857,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;&lt;a name=&#34;Fig_6&#34;&gt;&lt;/a&gt; &lt;strong&gt;Figure 6: DescribeSensor response schema&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;sml:SensorML&amp;gt; 
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;sml:SensorML&amp;gt; 
     &amp;lt;sml:capabilities name=&amp;quot;ioosServiceMetadata&amp;quot;&amp;gt;
                 Version of the IOOS Template used in this document  
     &amp;lt;/sml:capabilities&amp;gt;
@@ -988,7 +988,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The template for a generic DescribeSensor document for network is shown below. The template is independent of feature types, and presents just enough metadata to determine what additional descriptions are needed. The specifics of some elements’ use in the network template are discussed in details later.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;sml:SensorML 
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;sml:SensorML 
     xmlns:sml=&amp;quot;http://www.opengis.net/sensorML/1.0.1&amp;quot; 
     xmlns:gml=&amp;quot;http://www.opengis.net/gml&amp;quot; 
     xmlns:swe=&amp;quot;http://www.opengis.net/swe/1.0.1&amp;quot; 
@@ -1150,9 +1150,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -1184,7 +1184,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;sml:classification&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;1…1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;In this template specifies classification values that describe the content of the network offering with terms defined in external vocabularies. The reference to at least one parent network with IOOS codespace and RA Acronym value is required, e.g.: &lt;br /&gt;&lt;pre&gt;&amp;lt;sml:classifier name=&amp;ldquo;parentNetwork&amp;rdquo;&amp;gt;&lt;br /&gt;    &amp;lt;sml:Term definition=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/ioos/definition/parentNetwork&amp;quot;&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/ioos/definition/parentNetwork&amp;quot;&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;        &amp;lt;sml:codeSpace xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/ioos/organization&amp;quot;/&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/ioos/organization&amp;quot;/&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;        &amp;lt;sml:value&amp;gt;NANOOS&lt;/sml:value\&gt;&lt;br /&gt;    &amp;lt;/sml:Term&amp;gt;&lt;br /&gt;&amp;lt;/sml:classifier&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;In this template specifies classification values that describe the content of the network offering with terms defined in external vocabularies. The reference to at least one parent network with IOOS codespace and RA Acronym value is required, e.g.: &lt;br /&gt;&lt;pre&gt;&amp;lt;sml:classifier name=&amp;ldquo;parentNetwork&amp;rdquo;&amp;gt;&lt;br /&gt;    &amp;lt;sml:Term definition=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/ioos/definition/parentNetwork&amp;quot;&amp;gt;&#34;&gt;http://mmisw.org/ont/ioos/definition/parentNetwork&amp;quot;&amp;gt;&lt;/a&gt;&lt;br /&gt;        &amp;lt;sml:codeSpace xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/ioos/organization&amp;quot;/&amp;gt;&#34;&gt;http://mmisw.org/ont/ioos/organization&amp;quot;/&amp;gt;&lt;/a&gt;&lt;br /&gt;        &amp;lt;sml:value&amp;gt;NANOOS&lt;/sml:value\&gt;&lt;br /&gt;    &amp;lt;/sml:Term&amp;gt;&lt;br /&gt;&amp;lt;/sml:classifier&amp;gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1244,7 +1244,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;li&gt;list of observed properties at platform including relevant sensor information&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;!-- Template document for a generic (independant of feature type) Describe Sensor Station --&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;!-- Template document for a generic (independant of feature type) Describe Sensor Station --&amp;gt;
 &amp;lt;sml:SensorML 
   xmlns:sml=&amp;quot;http://www.opengis.net/sensorML/1.0.1&amp;quot; 
   xmlns:gml=&amp;quot;http://www.opengis.net/gml&amp;quot; 
@@ -1527,9 +1527,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -1549,7 +1549,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;sml:identification&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;1…1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;In this template provides identity and alias information for the platform (in &amp;lt;sml:member/sml:System&amp;gt; section), and for all component sensors (in &amp;lt;sml:component/sml:System&amp;gt; sections). &lt;br /&gt;&lt;br /&gt;For the platform, the &lt;em&gt;&lt;strong&gt;stationID&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;shortName&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;longName&lt;/strong&gt;&lt;/em&gt; are required; however, only &lt;em&gt;&lt;strong&gt;sensorID&lt;/strong&gt;&lt;/em&gt; is mandatory for component sensors. In both cases, other appropriate identification information is encouraged. &lt;br /&gt;&lt;br /&gt;A &lt;em&gt;&lt;strong&gt;wmoID&lt;/strong&gt;&lt;/em&gt; is an optional identifier for the Milestone 1.0 but is strongly recommended for each platform when it is available. The &lt;em&gt;&lt;strong&gt;wmoID&lt;/strong&gt;&lt;/em&gt; should be specified as a separate identifier even if the main &lt;em&gt;&lt;strong&gt;stationID&lt;/strong&gt;&lt;/em&gt; URN uses the WMO authority:&lt;br /&gt;&lt;pre&gt;&amp;lt;sml:identifier name=&amp;ldquo;wmoID&amp;rdquo;&amp;gt;&lt;br /&gt;    &amp;lt;sml:Term definition=&lt;a href=&#34;http://mmisw.org/ont/ioos/definition/wmoID&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/ioos/definition/wmoID&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;        &amp;lt;sml:value&amp;gt;41001&amp;lt;/sml:value&amp;gt;&lt;br /&gt;    &amp;lt;/sml:Term&amp;gt;&lt;br /&gt;&amp;lt;/sml:identifier&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;In this template provides identity and alias information for the platform (in &amp;lt;sml:member/sml:System&amp;gt; section), and for all component sensors (in &amp;lt;sml:component/sml:System&amp;gt; sections). &lt;br /&gt;&lt;br /&gt;For the platform, the &lt;em&gt;&lt;strong&gt;stationID&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;shortName&lt;/strong&gt;&lt;/em&gt; and &lt;em&gt;&lt;strong&gt;longName&lt;/strong&gt;&lt;/em&gt; are required; however, only &lt;em&gt;&lt;strong&gt;sensorID&lt;/strong&gt;&lt;/em&gt; is mandatory for component sensors. In both cases, other appropriate identification information is encouraged. &lt;br /&gt;&lt;br /&gt;A &lt;em&gt;&lt;strong&gt;wmoID&lt;/strong&gt;&lt;/em&gt; is an optional identifier for the Milestone 1.0 but is strongly recommended for each platform when it is available. The &lt;em&gt;&lt;strong&gt;wmoID&lt;/strong&gt;&lt;/em&gt; should be specified as a separate identifier even if the main &lt;em&gt;&lt;strong&gt;stationID&lt;/strong&gt;&lt;/em&gt; URN uses the WMO authority:&lt;br /&gt;&lt;pre&gt;&amp;lt;sml:identifier name=&amp;ldquo;wmoID&amp;rdquo;&amp;gt;&lt;br /&gt;    &amp;lt;sml:Term definition=&lt;a href=&#34;http://mmisw.org/ont/ioos/definition/wmoID&amp;gt;&#34;&gt;http://mmisw.org/ont/ioos/definition/wmoID&amp;gt;&lt;/a&gt;&lt;br /&gt;        &amp;lt;sml:value&amp;gt;41001&amp;lt;/sml:value&amp;gt;&lt;br /&gt;    &amp;lt;/sml:Term&amp;gt;&lt;br /&gt;&amp;lt;/sml:identifier&amp;gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -1640,9 +1640,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -1727,9 +1727,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -1777,9 +1777,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -1833,9 +1833,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -1872,7 +1872,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;li&gt;HTTP/GET:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&#34;HTML&#34;&gt;http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?service=SOS&amp;amp;version=1.0.0&amp;amp;request=GetObservation&amp;amp;offering=urn:ioos:network:test:all&amp;amp;observedProperty=http://mmisw.org/ont/cf/parameter/wind_speed&amp;amp;procedure=urn:ioos:station:test:blighreef&amp;amp;responseFormat= text/xml; subtype=&amp;quot;om/1.0.0/profiles/ioos_sos/1.0&amp;quot;
+&lt;pre&gt;&lt;code class=&#34;language-HTML&#34;&gt;http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?service=SOS&amp;amp;version=1.0.0&amp;amp;request=GetObservation&amp;amp;offering=urn:ioos:network:test:all&amp;amp;observedProperty=http://mmisw.org/ont/cf/parameter/wind_speed&amp;amp;procedure=urn:ioos:station:test:blighreef&amp;amp;responseFormat= text/xml; subtype=&amp;quot;om/1.0.0/profiles/ioos_sos/1.0&amp;quot;
 ````
 
 -   HTTP/POST:
@@ -1913,7 +1913,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The outline of the OM-GetObservation template is presented below:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;om:ObservationCollection&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;om:ObservationCollection&amp;gt;
     &amp;lt;gml:metaDataProperty xlink:title=&amp;quot;disclaimer&amp;quot;&amp;gt;
                             A human-readable disclaimer if considered useful
     &amp;lt;/gml:metaDataProperty&amp;gt;
@@ -1962,9 +1962,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Input Name&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;Cardinality&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Description&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Input Name&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Cardinality&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Description&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -2008,7 +2008,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;om:observedProperty&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;1…1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;A description of the phenomena that are being estimated through observation, e.g. &amp;ldquo;wave&amp;rdquo;, &amp;ldquo;temperature&amp;rdquo;, &amp;ldquo;wind&amp;rdquo;, etc. &lt;br /&gt;The IOOS Convention requires that&lt;ul&gt;&lt;li&gt;This element has a value that matches the value advertized in the Capabilities document.&lt;/li&gt;&lt;li&gt;The value is a URL corresponding to a Climate and Forecast (CF) Standard Name Parameter Vocabulary (&lt;a href=&#34;http://mmisw.org/ont/cf/parameter&#34;&gt;http://mmisw.org/ont/cf/parameter&lt;/a&gt;) or IOOS Parameter Vocabulary (e.g.: &lt;a href=&#34;http://mmisw.org/ont/ioos/parameter/wave&#34;&gt;http://mmisw.org/ont/ioos/parameter/wave&lt;/a&gt;) that are currently hosted by the Marine Metadata Interoperability (MMI) project.&lt;/li&gt;&lt;li&gt;The observed property shall be described in &amp;lt;om:observedProperty&amp;gt; as composite phenomenon using &amp;lt;swe:CompositePhenomenon&amp;gt; child element, even if just a single property is reported, and that property is not a compositу phenomenon’s constituent: &lt;ul&gt;&lt;li&gt;Each &amp;lt;swe:CompositePhenomenon&amp;gt; shall have a document-wide unique &amp;lt;gml:id&amp;gt; attribute (it is recommended to use just a simple integer counter next to a fixed string). &lt;/li&gt;&lt;li&gt;Each &amp;lt;swe:CompositePhenomenon&amp;gt; shall have a child element &amp;lt;gml:name&amp;gt; with a value of any human-readable text string. &lt;/li&gt;&lt;li&gt;Each &amp;lt;swe:CompositePhenomenon&amp;gt; shall always be expanded to the list of the constituent scalar properties. &lt;/li&gt;&lt;li&gt;The individual scalar properties shall be defined in the IOOS Parameter Vocabulary. &lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;EXAMPLE 1 (multiple scalar properties): &lt;br /&gt;&lt;pre&gt;&amp;lt;om:observedProperty&amp;gt;&lt;br /&gt;  &amp;lt;swe:CompositePhenomenon dimension=&amp;ldquo;4&amp;rdquo; gml:id=&amp;ldquo;observedproperties1&amp;rdquo;&amp;gt;&lt;br /&gt;      &amp;lt;gml:name&amp;gt;Response Observed Properties&amp;lt;/gml:name&amp;gt;&lt;br /&gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/wind_speed&amp;quot;/&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/cf/parameter/wind_speed&amp;quot;/&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/wind_gust&amp;quot;/&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/cf/parameter/wind_gust&amp;quot;/&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/ioos/parameter/dissolved_oxygen&amp;quot;/&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/ioos/parameter/dissolved_oxygen&amp;quot;/&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;  &amp;lt;/swe:CompositePhenomenon&amp;gt;&lt;br /&gt;&amp;lt;/om:observedProperty&amp;gt;&lt;/pre&gt;&lt;br /&gt;EXAMPLE 2 (single scalar property): &lt;br /&gt;&lt;pre&gt;&amp;lt;om:observedProperty&amp;gt;&lt;br /&gt;    &amp;lt;swe:CompositePhenomenon dimension=&amp;ldquo;1&amp;rdquo; gml:id=&amp;ldquo;observedproperties1&amp;rdquo;&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;Response Observed Properties&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&amp;lt;br&#34;&gt;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;    &amp;lt;/swe:CompositePhenomenon&amp;gt;&lt;br /&gt;&amp;lt;/om:observedProperty&amp;gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A description of the phenomena that are being estimated through observation, e.g. &amp;ldquo;wave&amp;rdquo;, &amp;ldquo;temperature&amp;rdquo;, &amp;ldquo;wind&amp;rdquo;, etc. &lt;br /&gt;The IOOS Convention requires that&lt;ul&gt;&lt;li&gt;This element has a value that matches the value advertized in the Capabilities document.&lt;/li&gt;&lt;li&gt;The value is a URL corresponding to a Climate and Forecast (CF) Standard Name Parameter Vocabulary (&lt;a href=&#34;http://mmisw.org/ont/cf/parameter&#34;&gt;http://mmisw.org/ont/cf/parameter&lt;/a&gt;) or IOOS Parameter Vocabulary (e.g.: &lt;a href=&#34;http://mmisw.org/ont/ioos/parameter/wave&#34;&gt;http://mmisw.org/ont/ioos/parameter/wave&lt;/a&gt;) that are currently hosted by the Marine Metadata Interoperability (MMI) project.&lt;/li&gt;&lt;li&gt;The observed property shall be described in &amp;lt;om:observedProperty&amp;gt; as composite phenomenon using &amp;lt;swe:CompositePhenomenon&amp;gt; child element, even if just a single property is reported, and that property is not a compositу phenomenon’s constituent: &lt;ul&gt;&lt;li&gt;Each &amp;lt;swe:CompositePhenomenon&amp;gt; shall have a document-wide unique &amp;lt;gml:id&amp;gt; attribute (it is recommended to use just a simple integer counter next to a fixed string). &lt;/li&gt;&lt;li&gt;Each &amp;lt;swe:CompositePhenomenon&amp;gt; shall have a child element &amp;lt;gml:name&amp;gt; with a value of any human-readable text string. &lt;/li&gt;&lt;li&gt;Each &amp;lt;swe:CompositePhenomenon&amp;gt; shall always be expanded to the list of the constituent scalar properties. &lt;/li&gt;&lt;li&gt;The individual scalar properties shall be defined in the IOOS Parameter Vocabulary. &lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;EXAMPLE 1 (multiple scalar properties): &lt;br /&gt;&lt;pre&gt;&amp;lt;om:observedProperty&amp;gt;&lt;br /&gt;  &amp;lt;swe:CompositePhenomenon dimension=&amp;ldquo;4&amp;rdquo; gml:id=&amp;ldquo;observedproperties1&amp;rdquo;&amp;gt;&lt;br /&gt;      &amp;lt;gml:name&amp;gt;Response Observed Properties&amp;lt;/gml:name&amp;gt;&lt;br /&gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&#34;&gt;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&lt;/a&gt;&lt;br /&gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/wind_speed&amp;quot;/&amp;gt;&#34;&gt;http://mmisw.org/ont/cf/parameter/wind_speed&amp;quot;/&amp;gt;&lt;/a&gt;&lt;br /&gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/wind_gust&amp;quot;/&amp;gt;&#34;&gt;http://mmisw.org/ont/cf/parameter/wind_gust&amp;quot;/&amp;gt;&lt;/a&gt;&lt;br /&gt;      &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/ioos/parameter/dissolved_oxygen&amp;quot;/&amp;gt;&#34;&gt;http://mmisw.org/ont/ioos/parameter/dissolved_oxygen&amp;quot;/&amp;gt;&lt;/a&gt;&lt;br /&gt;  &amp;lt;/swe:CompositePhenomenon&amp;gt;&lt;br /&gt;&amp;lt;/om:observedProperty&amp;gt;&lt;/pre&gt;&lt;br /&gt;EXAMPLE 2 (single scalar property): &lt;br /&gt;&lt;pre&gt;&amp;lt;om:observedProperty&amp;gt;&lt;br /&gt;    &amp;lt;swe:CompositePhenomenon dimension=&amp;ldquo;1&amp;rdquo; gml:id=&amp;ldquo;observedproperties1&amp;rdquo;&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;Response Observed Properties&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;swe:component xlink:href=&amp;ldquo;&lt;a href=&#34;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&#34;&gt;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;/&amp;gt;&lt;/a&gt;&lt;br /&gt;    &amp;lt;/swe:CompositePhenomenon&amp;gt;&lt;br /&gt;&amp;lt;/om:observedProperty&amp;gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -2020,7 +2020,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;em&gt;gml:metaDataProperty&lt;/em&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;1…1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Contains the name and codeSpace values for the CF Feature Type: &lt;br /&gt;&lt;pre&gt;&amp;lt;gml:metaDataProperty&amp;gt;&lt;br /&gt;  &amp;lt;gml:name codeSpace=&amp;ldquo;&lt;a href=&#34;http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries&amp;quot;&amp;gt;&amp;lt;br&#34;&gt;http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries&amp;quot;&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;     timeSeries&lt;br /&gt;  &amp;lt;/gml:name&amp;gt;&lt;br /&gt;&amp;lt;/gml:metaDataProperty&amp;gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Contains the name and codeSpace values for the CF Feature Type: &lt;br /&gt;&lt;pre&gt;&amp;lt;gml:metaDataProperty&amp;gt;&lt;br /&gt;  &amp;lt;gml:name codeSpace=&amp;ldquo;&lt;a href=&#34;http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries&amp;quot;&amp;gt;&#34;&gt;http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries&amp;quot;&amp;gt;&lt;/a&gt;&lt;br /&gt;     timeSeries&lt;br /&gt;  &amp;lt;/gml:name&amp;gt;&lt;br /&gt;&amp;lt;/gml:metaDataProperty&amp;gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -2032,7 +2032,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;em&gt;gml:location&lt;/em&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;1…1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Describes the individual platform/station geographical location information (2D only, strongly recommended to use the EPSG::4326 CRS; however, ncSOS may report coordinates in other CRS retrieved from a source netCDF file). &lt;br /&gt;Despite having been “deprecated” (i.e., &amp;ldquo;not recommended to use&amp;rdquo;) by OGC since GML 3.1.0, the IOOS Convention requires &amp;lt;gml:location&amp;gt; as the least complex and all-sufficient structure among many options of reporting station position. For uniformity, the IOOS Conventions imposes certain constraints on the geospatial metadata representation: &lt;ul&gt;&lt;li&gt;both single- and multi-station response must report locations using the same &amp;lt;gml:MultiPoint&amp;gt; structure, i.e.&lt;ul&gt;&lt;br /&gt;&lt;li&gt;for single station:&lt;br /&gt;&lt;pre&gt;&amp;lt;gml:location&amp;gt;&lt;br /&gt;  &amp;lt;gml:MultiPoint srsName=&amp;ldquo;&lt;a href=&#34;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&amp;lt;br&#34;&gt;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;     &amp;lt;gml:pointMembers&amp;gt;&lt;br /&gt;        &amp;lt;gml:Point&amp;gt;&lt;br /&gt;           &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41001&amp;lt;/gml:name&amp;gt;&lt;br /&gt;           &amp;lt;gml:pos&amp;gt;34.7 -72.73&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;        &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;     &amp;lt;/gml:pointMembers&amp;gt;&lt;br /&gt;  &amp;lt;/gml:MultiPoint&amp;gt;&lt;br /&gt;&amp;lt;/gml:location&amp;gt;&lt;/pre&gt;&lt;/li&gt;&lt;li&gt;for multiple stations:&lt;br /&gt;&lt;pre&gt;&amp;lt;gml:location&amp;gt;&lt;br /&gt;  &amp;lt;gml:MultiPoint srsName=&amp;ldquo;&lt;a href=&#34;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&amp;lt;br&#34;&gt;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&amp;lt;br&lt;/a&gt; /&amp;gt;    &amp;lt;gml:pointMembers&amp;gt;&lt;br /&gt;      &amp;lt;gml:Point&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41001&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;gml:pos&amp;gt;34.7 -72.73&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;      &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;      &amp;lt;gml:Point&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41004&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;gml:pos&amp;gt;32.5 -79.09&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;      &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;      &amp;lt;gml:Point&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41008&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;gml:pos&amp;gt;31.4 -80.87&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;      &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;    &amp;lt;/gml:pointMembers&amp;gt;&lt;br /&gt;  &amp;lt;/gml:MultiPoint&amp;gt;&lt;br /&gt;&amp;lt;/gml:location&amp;gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&amp;lt;gml:name&amp;gt; element shall be used to associate the stationID with the station coordinates in both multi- and single-station responses.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Describes the individual platform/station geographical location information (2D only, strongly recommended to use the EPSG::4326 CRS; however, ncSOS may report coordinates in other CRS retrieved from a source netCDF file). &lt;br /&gt;Despite having been “deprecated” (i.e., &amp;ldquo;not recommended to use&amp;rdquo;) by OGC since GML 3.1.0, the IOOS Convention requires &amp;lt;gml:location&amp;gt; as the least complex and all-sufficient structure among many options of reporting station position. For uniformity, the IOOS Conventions imposes certain constraints on the geospatial metadata representation: &lt;ul&gt;&lt;li&gt;both single- and multi-station response must report locations using the same &amp;lt;gml:MultiPoint&amp;gt; structure, i.e.&lt;ul&gt;&lt;br /&gt;&lt;li&gt;for single station:&lt;br /&gt;&lt;pre&gt;&amp;lt;gml:location&amp;gt;&lt;br /&gt;  &amp;lt;gml:MultiPoint srsName=&amp;ldquo;&lt;a href=&#34;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&#34;&gt;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&lt;/a&gt;&lt;br /&gt;     &amp;lt;gml:pointMembers&amp;gt;&lt;br /&gt;        &amp;lt;gml:Point&amp;gt;&lt;br /&gt;           &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41001&amp;lt;/gml:name&amp;gt;&lt;br /&gt;           &amp;lt;gml:pos&amp;gt;34.7 -72.73&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;        &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;     &amp;lt;/gml:pointMembers&amp;gt;&lt;br /&gt;  &amp;lt;/gml:MultiPoint&amp;gt;&lt;br /&gt;&amp;lt;/gml:location&amp;gt;&lt;/pre&gt;&lt;/li&gt;&lt;li&gt;for multiple stations:&lt;br /&gt;&lt;pre&gt;&amp;lt;gml:location&amp;gt;&lt;br /&gt;  &amp;lt;gml:MultiPoint srsName=&amp;ldquo;&lt;a href=&#34;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&#34;&gt;http://www.opengis.net/def/crs/EPSG/0/4326&amp;quot;&amp;gt;&lt;/a&gt;&lt;br /&gt;    &amp;lt;gml:pointMembers&amp;gt;&lt;br /&gt;      &amp;lt;gml:Point&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41001&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;gml:pos&amp;gt;34.7 -72.73&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;      &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;      &amp;lt;gml:Point&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41004&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;gml:pos&amp;gt;32.5 -79.09&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;      &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;      &amp;lt;gml:Point&amp;gt;&lt;br /&gt;        &amp;lt;gml:name&amp;gt;urn:ioos:station:wmo:41008&amp;lt;/gml:name&amp;gt;&lt;br /&gt;        &amp;lt;gml:pos&amp;gt;31.4 -80.87&amp;lt;/gml:pos&amp;gt;&lt;br /&gt;      &amp;lt;/gml:Point&amp;gt;&lt;br /&gt;    &amp;lt;/gml:pointMembers&amp;gt;&lt;br /&gt;  &amp;lt;/gml:MultiPoint&amp;gt;&lt;br /&gt;&amp;lt;/gml:location&amp;gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&amp;lt;gml:name&amp;gt; element shall be used to associate the stationID with the station coordinates in both multi- and single-station responses.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
@@ -2047,7 +2047,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The OGC SWE Common Data Model Encoding Standard v2.0 allows data components to be used as a data container as well as a data descriptor, where container defines metadata of a data set and includes the actual property values (“inline” values), while data descriptor defines metadata of a data set but does not include the actual data values. However, the Standard prohibits mixing of both guises in a single data component entity. For example, a single DataArray cannot contain both inline values and block-encoded values. Therefore, the IOOS Convention requires a Result block to include a root DataRecord composed of two basic fields – “stations” and “observationData”. The field &amp;ldquo;stations&amp;rdquo; forms a “static” part of the GetObservation response Result block that encompasses all invariable data for all stations and sensors, whereas the field “observationData” draws up a “dynamic” part that encloses observation values varying from sensor to sensor. All data components in the static block must be used as data containers and encoded inline, while the data components in the dynamic block must be used only as data descriptors, and contain a DataArray with block-encoded values:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:DataRecord definition=&amp;quot;http://mmisw.org/ont/ioos/swe_element_type/observationRecord&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:DataRecord definition=&amp;quot;http://mmisw.org/ont/ioos/swe_element_type/observationRecord&amp;quot;&amp;gt;
     &amp;lt;swe2:field name=&amp;quot;stations&amp;quot;&amp;gt;
         &amp;lt;swe2:DataRecord definition=&amp;quot;http://mmisw.org/ont/ioos/swe_element_type/stations&amp;quot;&amp;gt;
              [ STATIC DATA ]
@@ -2084,7 +2084,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The value of the “definition” attribute of the same type of element may vary depending on the observed property. The &lt;a href=&#34;http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0&#34;&gt;IOOS SWE Templates for Milestone 1.0&lt;/a&gt; along with the &lt;a href=&#34;http://mmisw.org/orr/#http://mmisw.org/ont/ioos/swe_element_type&#34;&gt;MMI vocabularies&lt;/a&gt; provide a comprehensive guidance for a use of definitions in IOOS SOS GetObservations document; some examples are shown below:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:DataRecord   definition=&amp;quot;http://mmisw.org/ont/ioos/swe_element_type/stations&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:DataRecord   definition=&amp;quot;http://mmisw.org/ont/ioos/swe_element_type/stations&amp;quot;&amp;gt;
 &amp;lt;swe2:DataRecord   id=&amp;quot;stationID&amp;quot;   definition=&amp;quot;http://mmisw.org/ont/ioos/swe_element_type/station&amp;quot;&amp;gt;
 &amp;lt;swe2:Text   definition=&amp;quot;http://mmisw.org/ont/ioos/definition/stationID&amp;quot;&amp;gt;
 &amp;lt;swe2:Vector   definition=”http://www.opengis.net/def/property/OGC/0/PlatformLocation”&amp;gt;
@@ -2121,7 +2121,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;In general, IOOS Convention does not prescribe how data should be allocated to the static and dynamic parts, i.e. almost any element may be considered as static or dynamic. However, the static part must include &lt;em&gt;&lt;strong&gt;stationID&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;platformLocation&lt;/strong&gt;&lt;/em&gt;, and _&lt;strong&gt;sensors&lt;/strong&gt;_ description fields for each station:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;stations&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;stations&amp;quot;&amp;gt;
   &amp;lt;swe2:DataRecord definition=&amp;quot;http://mmisw.org/ont/ioos/definition/stations&amp;quot;&amp;gt;
     &amp;lt;swe2:field name=&amp;quot;wmo_41001&amp;quot;&amp;gt;
       &amp;lt;swe2:DataRecord id=&amp;quot;wmo_41001&amp;quot; definition=&amp;quot;http://mmisw.org/ont/ioos/definition/station&amp;quot;&amp;gt;
@@ -2170,14 +2170,14 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The IOOS Convention requires that stationID or sensorID is described in the &amp;lt;swe2:Text&amp;gt; element rather than in &amp;lt;swe2:Category&amp;gt;. The value of the &amp;lt;swe2:Text&amp;gt; must be a full station URN as defined in the &lt;a href=&#34;https://geo-ide.noaa.gov/wiki/index.php?title=IOOS_Conventions_for_Observing_Asset_Identifiers&#34;&gt;IOOS Conventions for Observing Asset Identifiers&lt;/a&gt;, as shown in the examples below:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;stationID&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;stationID&amp;quot;&amp;gt;
     &amp;lt;swe2:Text definition=&amp;quot;http://mmisw.org/ont/ioos/definition/stationID&amp;quot;&amp;gt;
         &amp;lt;swe2:value&amp;gt;urn:ioos:station:wmo:41001&amp;lt;/swe2:value&amp;gt;
     &amp;lt;/swe2:Text&amp;gt;
 &amp;lt;/swe2:field&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorID&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorID&amp;quot;&amp;gt;
     &amp;lt;swe2:Text definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensorID&amp;quot;&amp;gt;
         &amp;lt;swe2:value&amp;gt;urn:ioos:sensor:wmo:41001:sensor1&amp;lt;/swe2:value&amp;gt;
     &amp;lt;/swe2:Text&amp;gt;
@@ -2195,7 +2195,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The following fragment of the IOOS Milestone 1.0 Template illustrates the platform’s location description:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;platformLocation&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;platformLocation&amp;quot;&amp;gt;
   &amp;lt;swe2:Vector definition=&amp;quot;http://www.opengis.net/def/property/OGC/0/PlatformLocation&amp;quot;
     referenceFrame=&amp;quot;http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;amp;2=http://www.opengis.net/def/crs/EPSG/0/5829&amp;quot;
     localFrame=&amp;quot;#wmo_41001_frame&amp;quot;&amp;gt;
@@ -2227,7 +2227,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The following fragment of the IOOS Milestone 1.0 Template illustrates just that simplified approach to sensors’ location description; if more information about sensor orientation and relative position is available, then it must be recorded in accordance with the SWE Common v2.0 specification:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;height&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;height&amp;quot;&amp;gt;
     &amp;lt;swe2:Quantity definition=&amp;quot;http://mmisw.org/ont/cf/parameter/height&amp;quot;
         axisID=&amp;quot;Z&amp;quot;
         referenceFrame=&amp;quot;#wmo_41001_frame&amp;quot;&amp;gt;
@@ -2245,7 +2245,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The static data block in GetObservations document may include any common QA/QC information on the station or sensor that is invariable among the observations:  &lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;stationID&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;stationID&amp;quot;&amp;gt;
   &amp;lt;swe2:Text definition=&amp;quot;http://mmisw.org/ont/ioos/definition/stationID&amp;quot;&amp;gt;
     
     &amp;lt;swe2:quality&amp;gt;
@@ -2257,7 +2257,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &amp;lt;/swe2:field&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorID&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorID&amp;quot;&amp;gt;
   &amp;lt;swe2:Text definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensorID&amp;quot;&amp;gt;
     
     &amp;lt;swe2:quality&amp;gt;
@@ -2277,7 +2277,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The IOOS Convention specifies a position of a profiling sensor in reference to a CRS rather than to the platform itself, just because the relative sensor’s position in the platform&amp;rsquo;s &lt;em&gt;&lt;strong&gt;localFrame&lt;/strong&gt;&lt;/em&gt; is likely to vary from observation to observation, whereas the absolute coordinates (i.e. latitude, longitude, and height) may be approximated as static. The sensor&amp;rsquo;s &lt;em&gt;&lt;strong&gt;localFrame&lt;/strong&gt;&lt;/em&gt; is referenced to the CRS similar to the the platform’s &lt;em&gt;&lt;strong&gt;localFrame&lt;/strong&gt;&lt;/em&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorLocation&amp;quot;&amp;gt;    
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorLocation&amp;quot;&amp;gt;    
   swe2:Vector definition=http://www.opengis.net/def/property/OGC/0/SensorLocation
   referenceFrame=&amp;quot;http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;amp;2=http://www.opengis.net/def/crs/EPSG/0/5829&amp;quot;
   localFrame=&amp;quot;#wmo_41001_sensor1_profile_frame&amp;quot;&amp;gt;
@@ -2312,7 +2312,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The following fragment of the IOOS Milestone 1.0 GetObservation Template for timeSeriesProfile provides more detailed guidance for the sensor orientation description:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorOrientation&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;sensorOrientation&amp;quot;&amp;gt;
   &amp;lt;swe2:Vector definition=&amp;quot;http://www.opengis.net/def/property/OGC/0/SensorOrientation&amp;quot;
     referenceFrame=&amp;quot;http://www.opengis.net/def/crs/OGC/0/ENU&amp;quot;&amp;gt;
     &amp;lt;swe2:coordinate name=&amp;quot;platform_orientation&amp;quot;&amp;gt;
@@ -2344,7 +2344,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;For binned profiling sensors, the IOOS Convention specifies bins and depths through the description of the vertical positions of each bin center with corresponding top and bottom edges. Despite the fact that the binned profile description is located in the static data block, the bins’ and depths’ values &lt;strong&gt;must not&lt;/strong&gt; be encoded inline but shall be encoded as a data array (i.e. block-encoded) instead. To allow for ragged arrays of data from upward looking ADCP sensors, the dimension of the array shall correspond to the number of binned observations for this sensor reported in the dynamic data section:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;profileBins&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;profileBins&amp;quot;&amp;gt;
     &amp;lt;swe2:DataArray definition=&amp;quot;http://mmisw.org/ont/ioos/swe_element_type/profileBins&amp;quot;&amp;gt;
         &amp;lt;swe2:description&amp;gt;Array of synchronous observation locations in a profile&amp;lt;/swe2:description&amp;gt;
         &amp;lt;swe2:elementCount&amp;gt;
@@ -2389,7 +2389,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;For non-binned profiling sensors, the IOOS Convention requires a description of the fixed vertical observation positions instead of bins. Similar to the description of binned sensors, it is done in a form of data array with the dimension that shall correspond to the number of observations for this sensor reported in the dynamic data section:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;profileHeights&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;profileHeights&amp;quot;&amp;gt;
     &amp;lt;swe2:DataArray definition=&amp;quot;http://mmisw.org/ont/ioos/definition/profileHeights&amp;quot;&amp;gt;
         &amp;lt;swe2:elementCount&amp;gt;
             &amp;lt;swe2:Count&amp;gt;
@@ -2428,7 +2428,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The simplified outline of the dynamic data block is presented below. The outline contains all the required elements with a brief description; the detailed description of the critical elements follows:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;observationData&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;observationData&amp;quot;&amp;gt;
     &amp;lt;swe2: DataArray definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensorObservationCollection&amp;quot;&amp;gt;
         &amp;lt;swe2:elementCount&amp;gt;
                         Defines the number of array components, i.e. the number of records in &amp;lt;swe2:values&amp;gt; below.
@@ -2496,7 +2496,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The &lt;em&gt;&lt;strong&gt;time&lt;/strong&gt;&lt;/em&gt; field of the observations&amp;rsquo; DataRecord is listed outside of DataChoice construct just because sampling time is related to all sensors; however, if sampling time is defined differently for some sensors it should be reported inside the respective DataChoice &amp;lt;swe2:item&amp;gt; element. The sampling time must be encoded as an ISO8601 UTC (Z) TimeInstant string:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;time&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=&amp;quot;time&amp;quot;&amp;gt;
   &amp;lt;swe2:Time definition=&amp;quot;http://www.opengis.net/def/property/OGC/0/SamplingTime&amp;quot;&amp;gt;
     &amp;lt;swe2:uom xlink:href=&amp;quot;http://www.opengis.net/def/uom/ISO-8601/0/Gregorian&amp;quot; /&amp;gt;
   &amp;lt;/swe2:Time&amp;gt;
@@ -2505,7 +2505,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;An implementation of missing or out-of-range values is completely arbitrary; however, the implementation must follow the SWECommon standard requirements. In general, a &amp;lt;swe2:Quantity&amp;gt; may contain any number of &amp;lt;swe:nilValue&amp;gt; elements for any nilValue reason, for example:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:Quantity definition=&amp;quot;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:Quantity definition=&amp;quot;http://mmisw.org/ont/cf/parameter/air_temperature&amp;quot;&amp;gt;
     ...
     &amp;lt;swe2:nilValues&amp;gt;
         &amp;lt;swe2:NilValues&amp;gt;
@@ -2521,7 +2521,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;As each sensor may perform various set of observations, the IOOS Convention requires that &lt;strong&gt;DataChoice&lt;/strong&gt; structure is used to select a sensor and the set of observation fields to be reported in each record for that sensor in the &amp;lt;swe2:values&amp;gt; element of the &lt;strong&gt;DataArray&lt;/strong&gt;. To ensure the proper linkage to the static data block, the item names must correspond to the sensor names in the static sensors’ &lt;strong&gt;DataRecord&lt;/strong&gt;. Each &lt;strong&gt;DataChoice&lt;/strong&gt; &amp;lt;swe2:item&amp;gt; element describes the dynamic sensor features such as &lt;em&gt;&lt;strong&gt;observedProperty&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;UoM&lt;/strong&gt;&lt;/em&gt;, etc. in a separate &lt;strong&gt;DataRecord&lt;/strong&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:field name=”sensor”&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:field name=”sensor”&amp;gt;
     &amp;lt;swe2:DataChoice definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensors&amp;quot;&amp;gt;
         &amp;lt;swe2:item name=&amp;quot;wmo_41001_sensor1&amp;quot;&amp;gt;
             &amp;lt;swe2:DataRecord definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensor&amp;quot;&amp;gt;
@@ -2589,7 +2589,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The &amp;lt;swe2:encoding&amp;gt; element defines all kinds of separators that are used for records and values in the &amp;lt;swe2:values&amp;gt; block. To facilitate the development of the SOS client applications, the IOOS Convention requires that the &amp;lt;swe2:encoding&amp;gt; element has always be included into GetObservation response, and strongly recommends to use the standard CSV separators, such as &amp;ldquo;.&amp;rdquo; for decimal separation, &amp;ldquo;,&amp;rdquo; for tockens, and LF (Line Feed) – for blocks separation. At that, the special ASCII symbols used in the capacity of separators must be encoded with the corresponding standard HTML Escape Sequences; for example, LF (Line Feed) separator must be replaced with “&amp;amp;#10;”:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:encoding&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:encoding&amp;gt;
     &amp;lt;swe2:TextEncoding
         decimalSeparator=&amp;quot;.&amp;quot;
         tokenSeparator=&amp;quot;,&amp;quot;
@@ -2601,7 +2601,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The IOOS Convention requires that, in contrast to the &amp;lt;swe2:TextEncoding&amp;gt; element above, the special characters used as separators stay unencoded in the &amp;lt;swe2:values&amp;gt; block, e.g. Line Feed must not be converted into”&amp;amp;#10;” but must be used as-is instead. The IOOS Convention also requires that the sensor names unambiguously correspond to the names used in the &lt;strong&gt;DataChoice&lt;/strong&gt; &amp;lt;swe2:item&amp;gt; elements:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:values&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:values&amp;gt;
             2009-05-23T00:00:00Z,wmo_41001_sensor1,15.4,2.0,280
             2009-05-23T01:00:00Z,wmo_41001_sensor1,15.8,1.8,121
             2009-05-23T02:00:00Z,wmo_41001_sensor1,15.6,1.0,142
@@ -2624,7 +2624,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;The QA/QC flags pertaining to all observed properties for a certain sensor may be described in &amp;lt;swe2:elementCount&amp;gt; element of the &lt;strong&gt;DataArray&lt;/strong&gt; definition that precedes a  description of observations &amp;lt;swe2:elementType&amp;gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:DataArray definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensorObservationCollection&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:DataArray definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensorObservationCollection&amp;quot;&amp;gt;
     &amp;lt;swe2:elementCount&amp;gt;
         &amp;lt;swe2:Count&amp;gt;
             &amp;lt;swe2:quality&amp;gt;
@@ -2652,7 +2652,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;In order to define a composite flag that may have several components with various values, multiple &amp;lt;swe2:quality&amp;gt; elements have to be used inside a corresponding &amp;lt;swe2:Quantity&amp;gt; element instead of a single multi-dimensional &lt;strong&gt;DataArray&lt;/strong&gt; as the SWE Common data model prohibits the use of embedded &lt;strong&gt;DataArray&lt;/strong&gt; inside of &amp;lt;swe2:Quantity&amp;gt;. The fragment of the Milestone 1.0 template below illustrates that concept for a 2-component DQA flag; for simplicity, the second DQA component just references the values defined in the description of the first component: &lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:DataArray definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensorObservationCollection&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:DataArray definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensorObservationCollection&amp;quot;&amp;gt;
     […]
     &amp;lt;swe2:elementType name=&amp;quot;observations&amp;quot;&amp;gt;
         […]
@@ -2731,7 +2731,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
                 &amp;lt;/swe2:DataChoice&amp;gt;
             &amp;lt;/swe2:field&amp;gt;
         &amp;lt;/swe2:DataRecord&amp;gt;
-    &amp;lt;/swe2:elementType&amp;gt; 
+    &amp;lt;/swe2:elementType&amp;gt;	
     
     &amp;lt;swe2:values&amp;gt;
         2009-05-23T00:00:00Z,a,wmo_41001_sensor1,15.4,T,a,r,2.0,280
@@ -2761,7 +2761,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;Similar to the non-profiling sensors, the sensor names used in the &lt;strong&gt;DataChoice&lt;/strong&gt; structure must correspond to the sensor names in the static data block; the same names must then be repeated in the &amp;lt;swe2:values&amp;gt; block:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;swe2:DataChoice definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensors&amp;quot;&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;swe2:DataChoice definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensors&amp;quot;&amp;gt;
     &amp;lt;swe2:item name=&amp;quot;wmo_41001_sensor1&amp;quot;&amp;gt;
         &amp;lt;swe2:DataRecord definition=&amp;quot;http://mmisw.org/ont/ioos/definition/sensor&amp;quot;&amp;gt;
             
@@ -2846,8 +2846,8 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Term&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Definition&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Term&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Definition&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -2929,8 +2929,8 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;Acronym&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Definition&lt;/td&gt;
+&lt;th align=&#34;left&#34;&gt;Acronym&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Definition&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3342,8 +3342,8 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;#&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Name and Location&lt;/td&gt;
+&lt;th align=&#34;center&#34;&gt;#&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name and Location&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3421,10 +3421,10 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>List of SOS Tests</title>
-      <link>http://duncombe.github.io/doc/testing/sos_test_list_github_notoc_summary</link>
+      <link>http://duncombe.github.io/sos-guidelines/doc/testing/sos_test_list_github_notoc_summary/</link>
       <pubDate>Mon, 04 Aug 2014 08:10:23 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/doc/testing/sos_test_list_github_notoc_summary</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/doc/testing/sos_test_list_github_notoc_summary/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;This document describes a collection of tests that have to be run in order to ensure a required level of compliance with IOOS SOS Profile 1.0 (IOOS Convention), and official OGC SOS 1.0.0 specification.&lt;/em&gt;&lt;/p&gt;
@@ -3446,9 +3446,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3538,9 +3538,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3570,9 +3570,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3656,9 +3656,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3768,9 +3768,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3812,9 +3812,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -3932,9 +3932,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -4060,9 +4060,9 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/td&gt;
+&lt;th&gt;&lt;strong&gt;TESTS&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;ASSERTIONS&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;strong&gt;IOOS Rq&amp;rsquo;d/Opt&lt;/strong&gt;&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
@@ -4259,13 +4259,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 GetCapabilities Template</title>
-      <link>http://duncombe.github.io/template/SOS-GetCapabilities</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SOS-GetCapabilities/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SOS-GetCapabilities</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SOS-GetCapabilities/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) GetCapabilities response.&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template Document for a generic (independant of feature type) Get Capabilites --&amp;gt;
 &amp;lt;!--  --&amp;gt;
 &amp;lt;!-- Template includes the following required metadata elements: --&amp;gt;
@@ -4464,13 +4464,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 SML DescribeSensor-Network Template</title>
-      <link>http://duncombe.github.io/template/SML-DescribeSensor-Network</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Network/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SML-DescribeSensor-Network</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Network/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) SensorML DescribeSensor response for Network of Stations&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template document for a generic (independant of feature type) Describe Sensor Network --&amp;gt;
 &amp;lt;!-- Each member system in the template includes: --&amp;gt;
 &amp;lt;!--    Name &amp;amp; Description --&amp;gt;
@@ -4759,13 +4759,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 SML DescribeSensor-Station Template</title>
-      <link>http://duncombe.github.io/template/SML-DescribeSensor-Station</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Station/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SML-DescribeSensor-Station</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SML-DescribeSensor-Station/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) SensorML DescribeSensor response for a single station&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template document for a generic (independant of feature type) Describe Sensor Station --&amp;gt;
 &amp;lt;!--  --&amp;gt;
 &amp;lt;!-- Since Milestone 1.0 really only addresses timeSeries and timeSeriesProfile, only station --&amp;gt;
@@ -5124,13 +5124,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 OM GetObservation Template</title>
-      <link>http://duncombe.github.io/template/OM-GetObservation</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/OM-GetObservation/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/OM-GetObservation</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/OM-GetObservation/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a generic (independent of feature type) GetObservation response. The result block in this template is empty; see SWE templates for guidance on the result block.&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- Template Document for a generic (independent of feature type) Get Observation. --&amp;gt;
 &amp;lt;!-- Specific feature types are referenced for example only. --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -5311,13 +5311,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 SWE-MultiStation-TimeSeries Template</title>
-      <link>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for multiple stations with multiple sensors&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple sensors --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -5761,7 +5761,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
             &amp;lt;/swe2:DataChoice&amp;gt;
           &amp;lt;/swe2:field&amp;gt;
         &amp;lt;/swe2:DataRecord&amp;gt;
-      &amp;lt;/swe2:elementType&amp;gt;   
+      &amp;lt;/swe2:elementType&amp;gt;	
       
       &amp;lt;swe2:encoding&amp;gt;
         &amp;lt;!-- SWE encoding and data values --&amp;gt;
@@ -5772,7 +5772,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
         &amp;lt;!-- swe:TextEncoding specification. --&amp;gt;
         &amp;lt;!--  --&amp;gt;
         &amp;lt;!-- About DataChoice from SWE Common 2.0: --&amp;gt;
-        &amp;lt;!-- 9.2.5  Rules for DataChoice --&amp;gt;
+        &amp;lt;!-- 9.2.5	Rules for DataChoice --&amp;gt;
         &amp;lt;!-- A тАЬDataChoiceтАЭ is encoded with the text method by providing the name of the selected item --&amp;gt;
         &amp;lt;!-- before the item values themselves. The name used shall correspond to the тАЬnameтАЭ attribute --&amp;gt;
         &amp;lt;!-- of the тАЬitemтАЭ property element that describes the structure of the selected item. --&amp;gt;
@@ -5814,13 +5814,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 SWE-MultiStation-TimeSeries-QC Template</title>
-      <link>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries_QC</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries_QC/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-MultiStation-TimeSeries_QC</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-MultiStation-TimeSeries_QC/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for multiple stations with multiple sensors including quality elements for some quantities&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple sensors including quality elements for some quantities. --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -6395,7 +6395,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
             &amp;lt;/swe2:DataChoice&amp;gt;
           &amp;lt;/swe2:field&amp;gt;
         &amp;lt;/swe2:DataRecord&amp;gt;
-      &amp;lt;/swe2:elementType&amp;gt;   
+      &amp;lt;/swe2:elementType&amp;gt;	
       
       &amp;lt;swe2:encoding&amp;gt;
         &amp;lt;!-- SWE encoding and data values --&amp;gt;
@@ -6406,7 +6406,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
         &amp;lt;!-- swe:TextEncoding specification. --&amp;gt;
         &amp;lt;!--  --&amp;gt;
         &amp;lt;!-- About DataChoice from SWE Common 2.0: --&amp;gt;
-        &amp;lt;!-- 9.2.5  Rules for DataChoice --&amp;gt;
+        &amp;lt;!-- 9.2.5	Rules for DataChoice --&amp;gt;
         &amp;lt;!-- A тАЬDataChoiceтАЭ is encoded with the text method by providing the name of the selected item --&amp;gt;
         &amp;lt;!-- before the item values themselves. The name used shall correspond to the тАЬnameтАЭ attribute --&amp;gt;
         &amp;lt;!-- of the тАЬitemтАЭ property element that describes the structure of the selected item. --&amp;gt;
@@ -6449,13 +6449,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 SWE-SingleStation-SingleProperty-TimeSeries Template</title>
-      <link>http://duncombe.github.io/template/SWE-SingleStation-SingleProperty-TimeSeries</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-SingleProperty-TimeSeries/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-SingleStation-SingleProperty-TimeSeries</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-SingleProperty-TimeSeries/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for a single station with a single sensor&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- a single station with a single sensor. It is a degenerate case of the multi station, multi --&amp;gt;
 &amp;lt;!-- sensor template.--&amp;gt;
@@ -6666,7 +6666,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
             &amp;lt;/swe2:DataChoice&amp;gt;
           &amp;lt;/swe2:field&amp;gt;
         &amp;lt;/swe2:DataRecord&amp;gt;
-      &amp;lt;/swe2:elementType&amp;gt;   
+      &amp;lt;/swe2:elementType&amp;gt;	
       
       &amp;lt;swe2:encoding&amp;gt;
         &amp;lt;!-- SWE encoding and data values --&amp;gt;
@@ -6677,7 +6677,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
         &amp;lt;!-- swe:TextEncoding specification. --&amp;gt;
         &amp;lt;!--  --&amp;gt;
         &amp;lt;!-- About DataChoice from SWE Common 2.0: --&amp;gt;
-        &amp;lt;!-- 9.2.5  Rules for DataChoice --&amp;gt;
+        &amp;lt;!-- 9.2.5	Rules for DataChoice --&amp;gt;
         &amp;lt;!-- A тАЬDataChoiceтАЭ is encoded with the text method by providing the name of the selected item --&amp;gt;
         &amp;lt;!-- before the item values themselves. The name used shall correspond to the тАЬnameтАЭ attribute --&amp;gt;
         &amp;lt;!-- of the тАЬitemтАЭ property element that describes the structure of the selected item. --&amp;gt;
@@ -6709,13 +6709,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 SWE-SingleStation-TimeSeriesProfile Template</title>
-      <link>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for a station with profiling sensors&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple profiling sensors --&amp;gt;
 &amp;lt;!--  --&amp;gt;
@@ -7231,13 +7231,13 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
     
     <item>
       <title>IOOS SOS v1.0 SWE-SingleStation-TimeSeriesProfile-QC Template</title>
-      <link>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile_QC</link>
+      <link>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile_QC/</link>
       <pubDate>Mon, 04 Aug 2014 08:09:56 UTC</pubDate>
       
-      <guid>http://duncombe.github.io/template/SWE-SingleStation-TimeSeriesProfile_QC</guid>
+      <guid>http://duncombe.github.io/sos-guidelines/template/SWE-SingleStation-TimeSeriesProfile_QC/</guid>
       <description>&lt;p&gt;&lt;em&gt;Template for a SWE Data Record&amp;rsquo;s static and dynamic fields for a station with profiling sensors including quality elements for some quantities&lt;/em&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-XML&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
 &amp;lt;!-- This template is an example of a SWE Data Record composed of static and dynamic fields for --&amp;gt;
 &amp;lt;!-- multiple stations with multiple profiling sensors --&amp;gt;
 &amp;lt;!--  --&amp;gt;
